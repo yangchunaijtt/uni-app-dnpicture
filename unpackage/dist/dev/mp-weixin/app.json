@@ -1,6 +1,12 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/document/index",
+    "pages/my/index",
+    "pages/alarmList/index",
+    "pages/hSystemStatus/index",
+    "pages/healthDegree/index",
+    "pages/historyCurve/index"
   ],
   "subPackages": [],
   "window": {
@@ -9,6 +15,29 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap43.json"
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#00FFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "项目",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png"
+      },
+      {
+        "pagePath": "pages/document/index",
+        "text": "文档",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png"
+      }
+    ]
+  },
+  "usingComponents": {}
 }
