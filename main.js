@@ -3,8 +3,14 @@ import App from './App'
 import store from './store/index.js'
 import { Request } from './util/api.js'
 
+// 引入全局uView
+import uView from 'uview-ui'
+
+Vue.use(uView)
+
 Vue.prototype.$Request = Request
 Vue.prototype.$store = store
+
 
 Vue.filter('formatDate',(date)=>{
 	const nDate = new Date(date)

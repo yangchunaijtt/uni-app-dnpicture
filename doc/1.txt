@@ -1,0 +1,56 @@
+教程挺不错的 。。 
+接口经常挂 。。
+请求 专辑详情 时特别慢 
+备用接口 可以看下面(部分图片没有 唉 再次认识到全栈的重要性~)
+推荐: http://service.picasso.adesk.com/v3/homepage/vertical
+专辑 http://service.picasso.adesk.com/v1/wallpaper/album
+分类: http://service.picasso.adesk.com/v1/vertical/category
+分类-最新-热门 http://service.picasso.adesk.com/v1/vertical/category/${id}/vertical
+专辑 http://service.picasso.adesk.com/v1/wallpaper/album
+专辑-详情 http://service.picasso.adesk.com/v1/wallpaper/album/${id}/wallpaper
+图片评论 http://service.picasso.adesk.com/v2/wallpaper/wallpaper/${id}/comment
+
+2020-07-05 23:3212回复
+
+云归山时有雾接口文档地址：https://www.showdoc.cc/414855720281749?page_id=3680857125411215
+
+
+接口文档地址：https://www.showdoc.cc/414855720281749?page_id=3680857125411215
+
+
+
+【报Bug】新建一个默认模板的uni-app项目，编译运行在微信开发者工具，有报错
+分类：uni-app
+小程序官方的bug bug反馈
+产品分类： uniapp/小程序/微信
+
+PC开发环境操作系统： WindowsPC开发环境操作系统版本号： win10HBuilderX类型： 正式HBuilderX版本号： 2.7.14第三方开发者工具版本号： 1.03.2006090_x64基础库版本号： 2.12.0项目创建方式： HBuilderX
+操作步骤：
+什么都没做，就新建一个默认模板的uni-app项目，编译运行在微信开发者工具，就有这个报错信息了
+
+预期结果：
+应该没有报错信息
+
+实际结果：
+有个报错信息：
+VM400:1 SystemError (appServiceSDKScriptError)
+Cannot read property 'forceUpdate' of undefined
+TypeError: Cannot read property 'forceUpdate' of undefined
+
+bug描述：
+新建一个默认模板的uni-app项目，运行编译，在微信开发者工具中报错
+VM400:1 SystemError (appServiceSDKScriptError)
+Cannot read property 'forceUpdate' of undefined
+TypeError: Cannot read property 'forceUpdate' of undefined
+
+截图如下：
+
+
+2020-07-11 11:46 负责人:无  分享
+12 个回复
+最佳回复
+
+DCloud_UNI_家兴
+DCloud_UNI_家兴 
+
+需要配置微信的 appid ，没有小程序正式的appid，可用测试的，微信新建项目的时候有测试号，在微信开发者工具右上角“详情”，或 project.config.json 中配置。
