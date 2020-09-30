@@ -1,15 +1,8 @@
 {
   "navigationBarTitleText": "项目",
   "usingComponents": {
-    "u-cell-group": "/uview-ui/components/u-cell-group/u-cell-group",
-    "u-cell-item": "/uview-ui/components/u-cell-item/u-cell-item",
-    "u-form": "/uview-ui/components/u-form/u-form",
-    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
-    "u-input": "/uview-ui/components/u-input/u-input",
-    "u-checkbox-group": "/uview-ui/components/u-checkbox-group/u-checkbox-group",
-    "u-checkbox": "/uview-ui/components/u-checkbox/u-checkbox",
-    "u-radio-group": "/uview-ui/components/u-radio-group/u-radio-group",
-    "u-radio": "/uview-ui/components/u-radio/u-radio",
-    "u-switch": "/uview-ui/components/u-switch/u-switch"
+    "u-image": "/uview-ui/components/u-image/u-image",
+    "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
   }
 }

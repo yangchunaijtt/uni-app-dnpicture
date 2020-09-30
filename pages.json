@@ -44,6 +44,12 @@
 			"style": {
 				"navigationBarTitleText": "历史清单"
 			}
+		},
+		{
+			"path": "pages/statement/index",
+			"style": {
+				"navigationBarTitleText": "博士力士乐服务条款"
+			}
 		}
 	],
 	"globalStyle": {

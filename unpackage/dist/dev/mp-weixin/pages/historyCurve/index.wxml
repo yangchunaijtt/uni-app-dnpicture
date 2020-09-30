@@ -1,1 +1,1 @@
-<view class="data-v-044db7b7">历史清单</view>
+<view class="data-v-044db7b7"><view class="data-v-044db7b7"><u-tabs vue-id="f52c7fa2-1" list="{{list}}" is-scroll="{{false}}" current="{{current}}" data-event-opts="{{[['^change',[['change']]]]}}" bind:change="__e" class="data-v-044db7b7" bind:__l="__l"></u-tabs></view></view>

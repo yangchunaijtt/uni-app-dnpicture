@@ -91,35 +91,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
-  uCellGroup: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-cell-group/u-cell-group */ "uview-ui/components/u-cell-group/u-cell-group").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-group/u-cell-group.vue */ 47))
+  uImage: function() {
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-image/u-image */ "uview-ui/components/u-image/u-image").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-image/u-image.vue */ 189))
   },
-  uCellItem: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-cell-item/u-cell-item */ "uview-ui/components/u-cell-item/u-cell-item").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-cell-item/u-cell-item.vue */ 54))
+  uSwiper: function() {
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-swiper/u-swiper */ "uview-ui/components/u-swiper/u-swiper").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-swiper/u-swiper.vue */ 197))
   },
-  uForm: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-form/u-form */ "uview-ui/components/u-form/u-form").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-form/u-form.vue */ 70))
-  },
-  uFormItem: function() {
-    return Promise.all(/*! import() | uview-ui/components/u-form-item/u-form-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-form-item/u-form-item")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-form-item/u-form-item.vue */ 77))
-  },
-  uInput: function() {
-    return Promise.all(/*! import() | uview-ui/components/u-input/u-input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-input/u-input")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-input/u-input.vue */ 88))
-  },
-  uCheckboxGroup: function() {
-    return Promise.all(/*! import() | uview-ui/components/u-checkbox-group/u-checkbox-group */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-checkbox-group/u-checkbox-group")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-checkbox-group/u-checkbox-group.vue */ 95))
-  },
-  uCheckbox: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-checkbox/u-checkbox */ "uview-ui/components/u-checkbox/u-checkbox").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-checkbox/u-checkbox.vue */ 102))
-  },
-  uRadioGroup: function() {
-    return Promise.all(/*! import() | uview-ui/components/u-radio-group/u-radio-group */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-radio-group/u-radio-group")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-radio-group/u-radio-group.vue */ 109))
-  },
-  uRadio: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-radio/u-radio */ "uview-ui/components/u-radio/u-radio").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-radio/u-radio.vue */ 116))
-  },
-  uSwitch: function() {
-    return __webpack_require__.e(/*! import() | uview-ui/components/u-switch/u-switch */ "uview-ui/components/u-switch/u-switch").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-switch/u-switch.vue */ 123))
+  uIcon: function() {
+    return __webpack_require__.e(/*! import() | uview-ui/components/u-icon/u-icon */ "uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 162))
   }
 }
 var render = function() {
@@ -159,31 +138,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -204,44 +159,55 @@ var _default =
 {
   data: function data() {
     return {
-      form: {
-        name: '',
-        intro: '',
-        sex: '' },
-
-      checkboxList: [{
-        name: '苹果',
-        checked: false,
-        disabled: false },
+      bksrc: "https://cdn.uviewui.com/uview/example/fade.jpg",
+      swiperList: [{
+        image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
+        title: '昨夜星辰昨夜风，画楼西畔桂堂东' },
 
       {
-        name: '雪梨',
-        checked: false,
-        disabled: false },
+        image: 'https://cdn.uviewui.com/uview/swiper/2.jpg',
+        title: '身无彩凤双飞翼，心有灵犀一点通' },
 
       {
-        name: '柠檬',
-        checked: false,
-        disabled: false }],
+        image: 'https://cdn.uviewui.com/uview/swiper/3.jpg',
+        title: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳' }],
 
 
-      radioList: [{
-        name: '鲜甜',
-        disabled: false },
+      navList: [{
+        url: '/pages/hSystemStatus/index',
+        title: "液压系统状态",
+        name: 'https://cdn.uviewui.com/uview/example/button.png' },
 
       {
-        name: '麻辣',
-        disabled: false }],
+        url: '/pages/alarmList/index',
+        title: "报警清单",
+        name: 'https://cdn.uviewui.com/uview/example/button.png' },
+
+      {
+        url: '/pages/historyCurve/index',
+        title: "历史曲线",
+        name: 'https://cdn.uviewui.com/uview/example/button.png' },
+
+      {
+        url: '/pages/healthDegree/index',
+        title: "主泵健康度",
+        name: 'https://cdn.uviewui.com/uview/example/button.png' }],
 
 
-      radio: '',
-      switchVal: false };
+      mapID: "1111xxmapid" };
 
   },
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    clickNav: function clickNav(url) {
+      console.log(url);
+      uni.navigateTo({
+        url: "".concat(url, "?mapID=").concat(this.mapID) });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

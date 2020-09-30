@@ -1,40 +1,16 @@
 <template>
-	<view class="content">
+	<view>
 		<view>
-			<u-cell-group>
-				<u-cell-item icon="share" title="停车坐爱枫林晚" :arrow="true" arrow-direction="down"></u-cell-item>
-				<u-cell-item icon="map" title="霜叶红于二月花" :arrow="false"></u-cell-item>
-			</u-cell-group>
+			<u-image width="100%" height="300rpx" :src="bksrc"></u-image>
+		</view>
+		<view class="wrap">
+			<u-swiper :list="swiperList" duration="1000" :circular="false" title='true'></u-swiper>
 		</view>
 		<view>
-			<u-form :model="form" ref="uForm">
-				<u-form-item label="姓名">
-					<u-input v-model="form.name" />
-				</u-form-item>
-				<u-form-item label="简介">
-					<u-input v-model="form.intro" />
-				</u-form-item>
-				<u-form-item label="性别">
-					<u-input v-model="form.sex" type="select" />
-				</u-form-item>
-				<u-form-item label="水果">
-					<u-checkbox-group>
-						<u-checkbox v-model="item.checked" v-for="(item, index) in checkboxList" :key="index" :name="item.name">
-							{{ item.name }}
-						</u-checkbox>
-					</u-checkbox-group>
-				</u-form-item>
-				<u-form-item label="味道">
-					<u-radio-group v-model="radio">
-						<u-radio v-for="(item, index) in radioList" :key="index" :name="item.name" :disabled="item.disabled">
-							{{ item.name }}
-						</u-radio>
-					</u-radio-group>
-				</u-form-item>
-				<u-form-item label="开关">
-					<u-switch slot="right" v-model="switchVal"></u-switch>
-				</u-form-item>
-			</u-form>
+			<view v-for="item in navList" :key='item.title' @click='clickNav(item.url)'>
+				<u-icon size="40" :name="item.name"></u-icon>
+				<text>{{item.title}}</text>
+			</view>
 		</view>
 	</view>
 </template>
@@ -43,49 +19,57 @@
 	export default {
 		data() {
 			return {
-				form: {
-					name: '',
-					intro: '',
-					sex: ''
-				},
-				checkboxList: [{
-						name: '苹果',
-						checked: false,
-						disabled: false
+				bksrc: "https://cdn.uviewui.com/uview/example/fade.jpg",
+				swiperList: [{
+						image: 'https://cdn.uviewui.com/uview/swiper/1.jpg',
+						title: '昨夜星辰昨夜风，画楼西畔桂堂东'
 					},
 					{
-						name: '雪梨',
-						checked: false,
-						disabled: false
+						image: 'https://cdn.uviewui.com/uview/swiper/2.jpg',
+						title: '身无彩凤双飞翼，心有灵犀一点通'
 					},
 					{
-						name: '柠檬',
-						checked: false,
-						disabled: false
+						image: 'https://cdn.uviewui.com/uview/swiper/3.jpg',
+						title: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳'
 					}
 				],
-				radioList: [{
-						name: '鲜甜',
-						disabled: false
+				navList: [{
+						url: '/pages/hSystemStatus/index',
+						title: "液压系统状态",
+						name: 'https://cdn.uviewui.com/uview/example/button.png'
 					},
 					{
-						name: '麻辣',
-						disabled: false
-					}
+						url: '/pages/alarmList/index',
+						title: "报警清单",
+						name: 'https://cdn.uviewui.com/uview/example/button.png'
+					},
+					{
+						url: '/pages/historyCurve/index',
+						title: "历史曲线",
+						name: 'https://cdn.uviewui.com/uview/example/button.png'
+					},
+					{
+						url: '/pages/healthDegree/index',
+						title: "主泵健康度",
+						name: 'https://cdn.uviewui.com/uview/example/button.png'
+					},
 				],
-				radio: '',
-				switchVal: false
+				mapID: "1111xxmapid"
 			};
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			clickNav(url) {
+				console.log(url);
+				uni.navigateTo({
+					url: `${url}?mapID=${this.mapID}`
+				})
+			}
 		}
 	}
 </script>
 
 <style lang='scss' scoped>
-
 </style>

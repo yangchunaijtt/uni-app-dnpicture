@@ -6,7 +6,8 @@
     "pages/alarmList/index",
     "pages/hSystemStatus/index",
     "pages/healthDegree/index",
-    "pages/historyCurve/index"
+    "pages/historyCurve/index",
+    "pages/statement/index"
   ],
   "subPackages": [],
   "window": {
@@ -39,5 +40,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap74.json"
 }
