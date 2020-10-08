@@ -1,2 +1,20 @@
 1：自定义主题
 https://www.uviewui.com/guide/theme.html
+
+uviewui
+
+2：图标
+ucharts
+
+3：uni.downloadFile下载
+点击下载按钮后处发methods里面的函数（官方文档说明请点击我）下载后通过 downloadTask，可监听下载进度变化事件
+
+4：uni.saveFile永久保存
+当uni.downloadFile 回调成功后tempFilePath参数临时保存文件的路径，在使用uni.saveFile存到本地即可
+
+5.保存所谓位置
+它保存的位置比奇葩在
+
+“内部存储\Android\data\io.dcloud.HBuilder\apps\HBuilder\doc\uniapp_save”
+
+如果是图片之类的可以直接保存在相册，或者5+plus自定义一个保存目录

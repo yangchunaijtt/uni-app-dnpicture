@@ -1,1 +1,1 @@
-<view class="data-v-2a70ab04">主磅健康度</view>
+<view class="qiun-charts data-v-2a70ab04"><canvas class="charts data-v-2a70ab04" canvas-id="canvasGauge" id="canvasGauge"></canvas></view>
