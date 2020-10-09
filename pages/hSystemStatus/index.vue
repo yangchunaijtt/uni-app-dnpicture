@@ -1,5 +1,9 @@
 <template>
-	<view>液压系统状态</view>
+	<view>液压系统状态
+		<view>
+			<web-view src="https://uniapp.dcloud.io/static/web-view.html"></web-view>
+		</view>
+	</view>
 </template>
 
 <script>

@@ -12,6 +12,10 @@
 				<text>{{item.title}}</text>
 			</view>
 		</view>
+		<view>
+			<button @click='clickNavTo'>百度</button>
+			<u-link href="http://www.uviewui.com">蜀道难，难于上青天</u-link>
+		</view>
 	</view>
 </template>
 
@@ -65,6 +69,12 @@
 				console.log(url);
 				uni.navigateTo({
 					url: `${url}?mapID=${this.mapID}`
+				})
+			},
+			clickNavTo() {
+				console.log('点击跳转');
+				uni.navigateTo({
+					url: 'https://www.baidu.com/'
 				})
 			}
 		}

@@ -23,23 +23,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "项目",
-        "iconPath": "static/logo.png",
-        "selectedIconPath": "static/logo.png"
+        "iconPath": "/static/logo.png",
+        "selectedIconPath": "/static/logo.png"
       },
       {
         "pagePath": "pages/document/index",
         "text": "文档",
-        "iconPath": "static/logo.png",
-        "selectedIconPath": "static/logo.png"
+        "iconPath": "/static/logo.png",
+        "selectedIconPath": "/static/logo.png"
       },
       {
         "pagePath": "pages/my/index",
         "text": "我的",
-        "iconPath": "static/logo.png",
-        "selectedIconPath": "static/logo.png"
+        "iconPath": "/static/logo.png",
+        "selectedIconPath": "/static/logo.png"
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap13.json"
+  "permission": {},
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {}
 }

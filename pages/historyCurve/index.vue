@@ -4,7 +4,7 @@
 			<u-tabs :list="tabList" :is-scroll="false" :current="current" @change="change"></u-tabs>
 		</view>
 		<view class="qiun-charts">
-				<canvas canvas-id="canvasLineA" id="canvasLineA" class="charts" @touchstart="touchLineA"></canvas>
+			<canvas canvas-id="canvasLineA" id="canvasLineA" class="charts" @touchstart="touchLineA"></canvas>
 		</view>
 	</view>
 </template>
@@ -50,6 +50,9 @@
 			this.getServerData();
 		},
 		methods: {
+			change() {
+
+			},
 			getServerData() {
 				uni.request({
 					url: 'https://www.ucharts.cn/data.json',
