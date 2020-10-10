@@ -250,7 +250,6 @@ var _self;var canvaPie = null;var _default = { data: function data() {return { t
 
 
 
-
     },
     touchLineA: function touchLineA(e) {
       canvaLineA.showToolTip(e, {

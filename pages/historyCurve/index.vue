@@ -114,7 +114,6 @@
 						}
 					}
 				});
-
 			},
 			touchLineA(e) {
 				canvaLineA.showToolTip(e, {
