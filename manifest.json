@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "touristappid",
+        "appid" : "wxa0618ddf0331c949",
         "setting" : {
             "urlCheck" : false
         },
